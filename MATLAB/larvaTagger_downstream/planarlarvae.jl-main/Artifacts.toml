@@ -1,0 +1,55 @@
+[chore_sample_output]
+git-tree-sha1 = "21f352668bf80009c68c3487fb464df477dc2b7a"
+lazy = true
+
+	[[chore_sample_output.download]]
+	url = "https://gitlab.pasteur.fr/nyx/artefacts/-/raw/e8b15ab23f6628d10f467de96540f6ba96050685/PlanarLarvae/chore_sample_output.tar.gz?inline=false"
+	sha256 = "56845fa23cf53a58df33f6a4daf48e0a031f3c7e920f9badd62ae07f350b62d8"
+
+[sample_trxmat_file]
+git-tree-sha1 = "e131dc0168d075ba884f26435f626cdfd6b13365"
+lazy = true
+
+	[[sample_trxmat_file.download]]
+	url = "https://gitlab.pasteur.fr/nyx/artefacts/-/raw/e8b15ab23f6628d10f467de96540f6ba96050685/PlanarLarvae/trx.mat.tgz?inline=false"
+	sha256 = "4cf2656c7917c623d668382c93d21ce3ef7da67255ee0efd596f7e0b40a84947"
+
+[sample_trxmat_file_small]
+git-tree-sha1 = "02ca7354569ede4825cfa7e3bb936195f20f7eee"
+lazy = true
+
+	[[sample_trxmat_file_small.download]]
+	url = "https://gitlab.pasteur.fr/nyx/artefacts/-/raw/e8b15ab23f6628d10f467de96540f6ba96050685/PlanarLarvae/trx_small.tgz?inline=false"
+	sha256 = "806ac7c2e51d2ed5535e336a44bc33cad4396850318ab771f8c9057ceda9a0d8"
+
+[sample_labels_small]
+git-tree-sha1 = "ae3068fb8faba12eb3fad0499ffd24502c5eb252"
+lazy = true
+
+	[[sample_labels_small.download]]
+	url = "https://gitlab.pasteur.fr/nyx/artefacts/-/raw/e8b15ab23f6628d10f467de96540f6ba96050685/PlanarLarvae/labels_small.tgz?inline=false"
+	sha256 = "e303c5da9a4a0d2fbf46bf50cad62619d1deef78cfe0c7ff05d314c80b2abb5e"
+
+[sample_fimtrack_tables]
+git-tree-sha1 = "6a1bb0b1ced44ae1add848156c7cc9ad367972fb"
+lazy = true
+
+	[[sample_fimtrack_tables.download]]
+	url = "https://gitlab.pasteur.fr/nyx/artefacts/-/raw/e8b15ab23f6628d10f467de96540f6ba96050685/PlanarLarvae/fimtrack_sample_tables.tgz?inline=false"
+	sha256 = "6163685cb6b23b74be61a786abf6a8f85996b6885dc42a68801d2ad2c9361cbe"
+
+[labels_with_dependencies]
+git-tree-sha1 = "ecdec11cb1db1095380b93ab165c24e7eea93bc5"
+lazy = true
+
+	[[labels_with_dependencies.download]]
+	url = "https://gitlab.pasteur.fr/nyx/artefacts/-/raw/e8b15ab23f6628d10f467de96540f6ba96050685/PlanarLarvae/labels_with_dependencies.tar.gz?inline=false"
+	sha256 = "478ef38a095a0a80c0c4e284d9fc68f5b118843272fc701b345f1351389095b0"
+
+[sample_training_dataset]
+git-tree-sha1 = "1dec5e1c33044d972466d03ca5b8816b9861eb5f"
+lazy = true
+
+  [[sample_training_dataset.download]]
+    url = "https://dl.pasteur.fr/fop/Wa2niN3o/sample_training_dataset.tgz"
+    sha256 = "5f1fc870185252a6c4d79ce113c6d98e30107610ee11029642e2e72b7d62c1a0"

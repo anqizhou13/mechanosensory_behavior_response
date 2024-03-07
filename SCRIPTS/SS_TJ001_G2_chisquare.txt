@@ -1,0 +1,6 @@
+grp1_FCF_attP2-40@UAS_Abeta40_116, grp2_SS_TJ001_G2@UAS_Abeta40_116
+[-239.28053624730325, -69.07379653468017]
+Power_divergenceResult(statistic=-93.95144210308078, pvalue=1.0)
+grp1_FCF_attP2-40@UAS_Abeta42_117, grp2_SS_TJ001_G2@UAS_Abeta42_117
+[-353.7379489851271, -144.51026004423028]
+Power_divergenceResult(statistic=-87.86027732007227, pvalue=1.0)
