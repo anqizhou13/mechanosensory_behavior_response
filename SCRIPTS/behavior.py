@@ -201,7 +201,7 @@ def visualize(input,protocol,root,genotypes,output,neuron,colors,line_smooth):
         
         actions_to_plot = np.array(actions_to_plot)
         probabilities = pd.DataFrame(data = np.transpose(actions_to_plot),index=t,columns=actions)
-        probabilities.to_csv('{}/{}_probabilitiesTimeSeries.csv'.format(output_line_plots,genotypes))
+        probabilities.to_csv('{}/{}_probabilitiesTimeSeries.csv'.format(output_line_plots,genotype))
         genotypes_to_plot.append(actions_to_plot)
         n_larvae.append(n)
 
@@ -311,9 +311,9 @@ def visualize(input,protocol,root,genotypes,output,neuron,colors,line_smooth):
             y = genotypes_to_plot[i]
             
             axs[i].bar(np.arange(len(genotypes)),genotypes_to_plot[i],color=colors)
-            axs[i].set_title(action_names_plot[i])
+            axs[i].set_title(action_names_plot[i],pad=15)
             axs[i].set_ylabel('Cum. Prob.')
-            axs[i].set_ylim([0,1])
+            #axs[i].set_ylim([0,1])
 
             x_left, x_right = axs[i].get_xlim()
             y_low, y_high = axs[i].get_ylim()       
@@ -403,10 +403,10 @@ def ethogram(input,root,genotypes,protocol,output):
         # Then, "ALWAYS use sans-serif fonts"
         plt.rcParams['font.family'] = "sans-serif"
 
-        labels_p = ['Run','Cast','Stop','Hunch','Back','Roll','Small Action','Static Bend']
-        # which correspond to the following number key ([1, 2, 3, 4, 5, 6, 7, 9])
-        # when picking colors, fill the integers that are unused with white --0,6,8
-        Color_p = ['#ffffff','#17202a','#C70039','#47c984','#0D43C5','#26c6da','#C70039','#B1B0B9','#ffffff','#fcd049']
+        labels_p = ['Run','Cast','Stop','Hunch','Back','Static Bend','Small Action']
+        # which correspond to the following number key ([1, 2, 3, 4, 5, 6, 7])
+        # when picking colors, fill the integers that are unused with white --0,8
+        Color_p = ['#ffffff','#17202a','#C70039','#47c984','#0D43C5','#26c6da','#c7a900','#B1B0B9','#ffffff']
         fig = plt.figure(figsize=((2,2)))
         ax = fig.add_subplot(111)
         cmap = LinearSegmentedColormap.from_list('Custom', Color_p, len(Color_p))
