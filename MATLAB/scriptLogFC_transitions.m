@@ -7,30 +7,30 @@
 clear all
 
 adresses = {
-%'/Volumes/TOSHIBA/t2/FCF_attP2@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
-%'/Volumes/TOSHIBA/t2/GMR_55C05@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
+'/Volumes/TOSHIBA/t2/FCF_attP2@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
+'/Volumes/TOSHIBA/t2/GMR_61D08@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
+'/Volumes/TOSHIBA/t2/GMR_20B01@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
+'/Volumes/TOSHIBA/t2/GMR_55C05@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
+%'/Volumes/TOSHIBA/t2/FCF_attP2@UAS_Abeta42_117/p_4_60s1x30s0s#pf OR_4_120s10x2s8s#n#n/';
 %'/Volumes/TOSHIBA/t2/GMR_61D08@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
-%'/Volumes/TOSHIBA/t2/GMR_20B01@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
-%'/Volumes/TOSHIBA/t2/FCF_attP2@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
-%'/Volumes/TOSHIBA/t2/GMR_55C05@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
-%'/Volumes/TOSHIBA/t2/GMR_61D08@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
 %'/Volumes/TOSHIBA/t2/GMR_20B01@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
+%'/Volumes/TOSHIBA/t2/GMR_55C05@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
 %'/Volumes/TOSHIBA/t2/FCF_attP2-40@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
 %'/Volumes/TOSHIBA/t2/GMR_SS00739@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
 %'/Volumes/TOSHIBA/t2/GMR_SS00888@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
 %'/Volumes/TOSHIBA/t2/SS_TJ001_G2@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
 %'/Volumes/TOSHIBA/t2/GMR_SS00918@UAS_Abeta40_116/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
-'/Volumes/TOSHIBA/t2/FCF_attP2-40@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
+%'/Volumes/TOSHIBA/t2/FCF_attP2-40@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
 %'/Volumes/TOSHIBA/t2/GMR_SS00739@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
 %'/Volumes/TOSHIBA/t2/GMR_SS00888@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
-'/Volumes/TOSHIBA/t2/SS_TJ001_G2@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
+%'/Volumes/TOSHIBA/t2/SS_TJ001_G2@UAS_Abeta42_117/p_4_60s1x30s0s#p_4_120s10x2s8s#n#n/';
 }
 
 %geno_labels = {'attP2_Ab1-42','55C05_Ab1-42'};
-%geno_labels = {'attP2_Ab1-42','61D08_Ab1-42','20B01_Ab1-42'}
+geno_labels = {'attP2_Ab1-40','61D08_Ab1-40','20B01_Ab1-40','55C05_Ab1-40'}
 %geno_labels = {'attP2_Ab1-42','61D08_Ab1-42','20B01_Ab1-42'};
-geno_labels = {'attP2-40_Ab1-42','SS_TJ001_G2_Ab1-42'};
-%geno_labels = {'attP2-40_Ab1-42','SS00739_Ab1-42','SS00888_Ab1-42'};
+%geno_labels = {'attP2-40_Ab1-42','SS_TJ001_G2_Ab1-42'};
+%geno_labels = {'attP2-40_Ab1-42','SS00739_Ab1-42','SS00888_Ab1-42','SSTJ001G2_Ab1-42'};
 
 % get colormap
 map = getPyPlot_cMap('RdBu_r',128,[],'/usr/local/bin/python3');
